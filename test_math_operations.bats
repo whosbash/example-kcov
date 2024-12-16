@@ -21,18 +21,18 @@ setup() {
   [ "$result" -eq -5 ]
 }
 
-# # Test for subtraction
-# @test "Subtract two positive numbers" {
-#   result="$(subtract_numbers 5 3)"
-#   [ "$result" -eq 2 ]
-# }
-# 
-# @test "Subtract a positive and a negative number" {
-#   result="$(subtract_numbers 5 -3)"
-#   [ "$result" -eq 8 ]
-# }
-# 
-# @test "Subtract two negative numbers" {
-#   result="$(subtract_numbers -5 -3)"
-#   [ "$result" -eq -2 ]
-# }
+# Test for subtraction
+@test "Subtract two positive numbers" {
+  result="$(subtract_numbers 5 3)"
+  [ "$result" -eq 2 ]
+}
+
+@test "Subtract a positive and a negative number" {
+  result="$(subtract_numbers 5 -3)"
+  [ "$result" -eq 8 ]
+}
+
+@test "Subtract two negative numbers" {
+  result="$(subtract_numbers -5 -3)"
+  [ "$result" -eq -2 ]
+}
